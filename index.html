@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Devaansh Mann - CS Grad Student at Cal Poly Pomona | Compiler Researcher | Full-Stack Developer">
+    <meta name="keywords" content="Devaansh Mann, Computer Science, Cal Poly Pomona, Software Engineer, Compiler, Parser Combinators, Full-Stack Developer">
+    <title>Devaansh Mann | CS Grad Student & Compiler Researcher</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">DM</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <!-- Animated Background Blobs -->
+        <div class="hero-blob hero-blob-1"></div>
+        <div class="hero-blob hero-blob-2"></div>
+        <div class="hero-blob hero-blob-3"></div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-name">Devaansh Mann</h1>
+                    <p class="hero-tagline">
+                        <span class="typing-text" id="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </p>
+                    <p class="hero-description">
+                        Master's student passionate about compiler design, programming language theory, and building scalable full-stack applications. Currently developing CollegeBuddy towards a production-ready, downloadable application that students can actually utilize.
+                    </p>
+                    <div class="hero-links">
+                        <a href="https://github.com/DevaanshMann" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/devaanshmann" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:devaanshmann5@gmail.com" class="social-link" aria-label="Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                    <a href="#about" class="hero-cta">
+                        Learn More
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <polyline points="19 12 12 19 5 12"></polyline>
+                        </svg>
+                    </a>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="profile.jpg" alt="Devaansh Mann" class="profile-photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content fade-in">
+                <div class="about-text">
+                    <p>
+                        I'm a Computer Science graduate student at <strong>California Polytechnic State University, Pomona</strong>, with a strong foundation from my Bachelor's degree at <strong>California State University, Northridge</strong> where I graduated with honors with a 3.5 GPA.
+                    </p>
+                    <p>
+                        My research focuses on <strong>compiler design and programming language theory</strong>, specifically developing novel parsing techniques for ambiguous grammars. I've had the privilege of contributing to compiler development for <strong>NASA's Jet Propulsion Laboratory (JPL)</strong>, working on reducing simulation error rates for planetary exploration systems.
+                    </p>
+                    <p>
+                        Beyond research, I'm passionate about building production-grade full-stack applications. I enjoy the challenge of architecting scalable systems, from database design to cloud deployment. I also thrive in leadership roles — during my undergrad, I chaired a committee of a $21M+ university organization and mentored fellow students as a Resident Advisor.
+                    </p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <span class="highlight-number">1</span>
+                        <span class="highlight-label">Published Paper</span>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="highlight-number">4+</span>
+                        <span class="highlight-label">Major Projects</span>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="highlight-number">$21M+</span>
+                        <span class="highlight-label">Org Led</span>
+                    </div>
+                    <div class="highlight-card">
+                        <span class="highlight-number">NASA</span>
+                        <span class="highlight-label">JPL Research</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section class="section research" id="research">
+        <div class="container">
+            <h2 class="section-title">Research & Publications</h2>
+            <div class="research-content">
+                <div class="publication-card fade-in">
+                    <div class="publication-badge">Published</div>
+                    <h3 class="publication-title">Iterator-Based Parser Combinators for Ambiguous Grammars</h3>
+                    <p class="publication-authors">
+                        Param Desai, <strong>Devaansh Mann</strong>, Kyle Dewey
+                    </p>
+                    <p class="publication-venue">
+                        Computer Science Conference for CSU Undergraduates (CSCSU), 2025
+                    </p>
+                    <div class="publication-abstract">
+                        <h4>Abstract</h4>
+                        <p>
+                            For most programming languages, context-free grammars form the basis for syntactic validity. Most literature focuses on parsing unambiguous context-free grammars, but real languages (including Swift) are sometimes ambiguous. This paper proposes a new technique for parsing ambiguous grammars: <strong>iterator-based parser combinators</strong>.
+                        </p>
+                        <p>
+                            Unlike traditional parser combinators, our approach computes all parses on demand, meaning only the work specific to the parses actually used is performed. Our results show <strong>8,812x improvement</strong> in runtime for obtaining the first valid parse on highly ambiguous grammars.
+                        </p>
+                    </div>
+                    <div class="publication-contributions">
+                        <h4>Key Contributions</h4>
+                        <ul>
+                            <li>Novel iterator-based approach serving as drop-in replacement for traditional parser combinators</li>
+                            <li>On-demand parse computation using lazy evaluation</li>
+                            <li>Implementation in Java with evaluation on multiple grammar types</li>
+                            <li>Demonstrated viability for real-world ambiguous grammars like Swift</li>
+                        </ul>
+                    </div>
+                    <div class="publication-links">
+                        <a href="https://cscsu-conference.github.io" target="_blank" rel="noopener noreferrer" class="pub-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            Conference Website
+                        </a>
+                        <a href="Iterator Based Parser Combinators.pdf" target="_blank" rel="noopener noreferrer" class="pub-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                            Read Paper (PDF)
+                        </a>
+                    </div>
+                </div>
+
+                <div class="research-card fade-in">
+                    <div class="research-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Proteus Programming Language</h3>
+                    <p class="research-affiliation">NASA Jet Propulsion Laboratory | CSUN ARCS Center</p>
+                    <p class="research-description">
+                        Collaborated on developing a specialized programming language for NASA JPL, focusing on reducing simulation error rates for planetary exploration applications. Contributed to compiler development achieving a <strong>30% reduction in simulation error rates</strong> through implementation of novel parsing algorithms.
+                    </p>
+                    <div class="research-tags">
+                        <span class="tag">Compiler Design</span>
+                        <span class="tag">Language Development</span>
+                        <span class="tag">NASA JPL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <a href="https://github.com/DevaanshMann/CollegeBuddy" target="_blank" rel="noopener noreferrer" class="project-github" aria-label="View on GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <h3 class="project-title">CollegeBuddy</h3>
+                    <p class="project-description">
+                        Full-stack social networking platform for college students featuring real-time messaging, user connections, group chat, and admin dashboard with 40+ REST API endpoints. Currently expanding to native iOS and Android apps.
+                    </p>
+                    <ul class="project-features">
+                        <li>JWT authentication with Spring Security 6.3, email verification, RBAC</li>
+                        <li>PostgreSQL database with 13+ tables, Flyway migrations, optimized indexes</li>
+                        <li>React frontend with TypeScript, 31 reusable components, custom hooks</li>
+                        <li>Deployed to GCP Cloud Run with auto-scaling (0-10 instances)</li>
+                        <li>Real-time messaging with read receipts and unread tracking</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-tag">Spring Boot 3.3</span>
+                        <span class="tech-tag">React 19</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">GCP</span>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="project-title">SIFT Compiler Bug Detection</h3>
+                    <p class="project-description">
+                        Automated testing framework for the Swift Compiler in collaboration with Dr. Kyle Dewey. Identifies and resolves bugs through targeted code generation and comprehensive analysis of compiler behavior.
+                    </p>
+                    <ul class="project-features">
+                        <li>Automated bug detection through targeted code generation</li>
+                        <li>Enhanced code coverage with custom test cases</li>
+                        <li>Reduction in undetected bugs in Swift Compiler's core modules</li>
+                        <li>Ongoing collaboration on compiler quality improvement</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-tag">Swift</span>
+                        <span class="tech-tag">Compiler Testing</span>
+                        <span class="tech-tag">Code Generation</span>
+                        <span class="tech-tag">Static Analysis</span>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="project-title">Iterator-Based Parser Combinators</h3>
+                    <p class="project-description">
+                        Java library implementing novel iterator-based parser combinators for efficiently parsing ambiguous grammars. Serves as a drop-in replacement for traditional parser combinators with on-demand parse computation.
+                    </p>
+                    <ul class="project-features">
+                        <li>20% reduction in runtime errors through improved code flexibility</li>
+                        <li>Lazy evaluation for on-demand parse construction</li>
+                        <li>Support for both globally and locally ambiguous grammars</li>
+                        <li>Published research paper at CSCSU 2025</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Parser Combinators</span>
+                        <span class="tech-tag">Iterators</span>
+                        <span class="tech-tag">AST</span>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                        </svg>
+                    </div>
+                    <h3 class="project-title">Proteus</h3>
+                    <p class="project-description">
+                        Specialized programming language developed for NASA Jet Propulsion Laboratory at the CSUN ARCS Center. Designed to address limitations of existing languages for planetary exploration simulation systems.
+                    </p>
+                    <ul class="project-features">
+                        <li>30% reduction in simulation error rates</li>
+                        <li>Novel parsing algorithms for improved accuracy</li>
+                        <li>Enhanced system control for planetary exploration</li>
+                        <li>Collaborative development with NASA JPL researchers</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-tag">Compiler Design</span>
+                        <span class="tech-tag">Language Development</span>
+                        <span class="tech-tag">NASA JPL</span>
+                        <span class="tech-tag">Simulation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-content fade-in">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                        Languages
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                        Backend & Frameworks
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Spring Boot 3.3</span>
+                        <span class="skill-tag">Spring Security 6.3</span>
+                        <span class="skill-tag">RESTful APIs</span>
+                        <span class="skill-tag">JWT Authentication</span>
+                        <span class="skill-tag">Flyway Migrations</span>
+                        <span class="skill-tag">JUnit</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                            <polyline points="2 17 12 22 22 17"></polyline>
+                            <polyline points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                        Frontend & UI
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">React Router</span>
+                        <span class="skill-tag">Context API</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">HOCs</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                        </svg>
+                        Databases
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Database Design</span>
+                        <span class="skill-tag">Normalization</span>
+                        <span class="skill-tag">Query Optimization</span>
+                        <span class="skill-tag">Indexing</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                        </svg>
+                        Cloud & DevOps
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Google Cloud Platform</span>
+                        <span class="skill-tag">Cloud Run</span>
+                        <span class="skill-tag">Cloud SQL</span>
+                        <span class="skill-tag">Secret Manager</span>
+                        <span class="skill-tag">CI/CD</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                        Security
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Spring Security</span>
+                        <span class="skill-tag">BCrypt Hashing</span>
+                        <span class="skill-tag">RBAC</span>
+                        <span class="skill-tag">CORS</span>
+                        <span class="skill-tag">CSP</span>
+                        <span class="skill-tag">HSTS</span>
+                        <span class="skill-tag">XSS Protection</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                        </svg>
+                        Compiler & Languages
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Parser Combinators</span>
+                        <span class="skill-tag">Compiler Design</span>
+                        <span class="skill-tag">Language Development</span>
+                        <span class="skill-tag">Abstract Syntax Trees</span>
+                        <span class="skill-tag">Lexical Analysis</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                        </svg>
+                        Tools & Architecture
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Maven</span>
+                        <span class="skill-tag">npm</span>
+                        <span class="skill-tag">MVC Architecture</span>
+                        <span class="skill-tag">Design Patterns</span>
+                        <span class="skill-tag">Microservices</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"></path>
+                            <circle cx="7.5" cy="14.5" r="1.5"></circle>
+                            <circle cx="16.5" cy="14.5" r="1.5"></circle>
+                        </svg>
+                        AI & LLMs
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Claude Code</span>
+                        <span class="skill-tag">ChatGPT</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                        <span class="skill-tag">AI-Assisted Development</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        Soft Skills
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Leadership</span>
+                        <span class="skill-tag">Team Collaboration</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Adaptability</span>
+                        <span class="skill-tag">Emergency Response</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Res Life Intern</h3>
+                            <span class="timeline-date">Oct 2025 - Present</span>
+                        </div>
+                        <p class="timeline-company">University Housing Services - Cal Poly Pomona</p>
+                        <ul class="timeline-details">
+                            <li>Contributing to staff training and leadership development, including recruitment and selection of Resident Advisors</li>
+                            <li>Streamlining day-to-day housing operations by assisting with emergencies, reporting issues, and supporting departmental programs</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Recreation Technician</h3>
+                            <span class="timeline-date">Aug 2025 - Present</span>
+                        </div>
+                        <p class="timeline-company">ASI BRIC - Cal Poly Pomona</p>
+                        <ul class="timeline-details">
+                            <li>Maintaining pool operations: vacuum lanes, daily chemistry readings, adjusting levels, troubleshooting pumps/filters</li>
+                            <li>Promoting safe environment by adhering to Cal/OSHA standards, enforcing policies, and delivering customer-first support</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>ARCS Research Assistant</h3>
+                            <span class="timeline-date">Jan 2024 - May 2025</span>
+                        </div>
+                        <p class="timeline-company">California State University, Northridge | NASA JPL</p>
+                        <ul class="timeline-details">
+                            <li>Developed a compiler and programming language for NASA Jet Propulsion Laboratory under guidance of Lead Researcher</li>
+                            <li>Contributed to compiler development achieving <strong>30% reduction in simulation error rates</strong> through novel parsing algorithms</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Chair, University Student Union Board of Directors</h3>
+                            <span class="timeline-date">Oct 2024 - May 2025</span>
+                        </div>
+                        <p class="timeline-company">California State University, Northridge</p>
+                        <ul class="timeline-details">
+                            <li>Directed Facilities and Operations Committee to manage facility, implement policies, and oversee projects in a <strong>$21M+ organization</strong></li>
+                            <li>Evaluated and approved new commercial operations, policies and projects within the University Student Union</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Resident Advisor</h3>
+                            <span class="timeline-date">Aug 2023 - May 2025</span>
+                        </div>
+                        <p class="timeline-company">California State University, Northridge</p>
+                        <ul class="timeline-details">
+                            <li>Led emergency response protocols for <strong>200+ residents</strong>, managing 15+ critical situations per semester with 100% resolution rate</li>
+                            <li>Resolved 30+ resident conflicts through structured mediation, reducing incident reports by <strong>40%</strong> and maintaining 95% satisfaction</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Teaching Assistant (COMP 222)</h3>
+                            <span class="timeline-date">Mar 2023 - Aug 2023</span>
+                        </div>
+                        <p class="timeline-company">California State University, Northridge</p>
+                        <ul class="timeline-details">
+                            <li>Evaluated 80+ technical assignments across 2 computer science courses, ensuring 24-hour turnaround with detailed feedback</li>
+                            <li>Mentored 50+ students through personalized feedback, resulting in <strong>15% average improvement</strong> in assignment scores</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-card fade-in">
+                    <div class="education-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                        </svg>
+                    </div>
+                    <div class="education-status">In Progress</div>
+                    <h3 class="education-degree">Master of Science in Computer Science</h3>
+                    <p class="education-school">California Polytechnic State University, Pomona</p>
+                    <p class="education-location">Pomona, CA</p>
+                    <p class="education-date">August 2025 - May 2027 (Anticipated)</p>
+                </div>
+
+                <div class="education-card fade-in">
+                    <div class="education-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                        </svg>
+                    </div>
+                    <div class="education-status completed">Completed</div>
+                    <h3 class="education-degree">Bachelor of Science in Computer Science</h3>
+                    <p class="education-school">California State University, Northridge</p>
+                    <p class="education-location">Los Angeles, CA</p>
+                    <p class="education-date">Aug 2021 - May 2025</p>
+                    <div class="education-achievements">
+                        <span class="achievement">GPA: 3.5/4.0</span>
+                        <span class="achievement">Graduated with Honors</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content fade-in">
+                <p class="contact-text">
+                    I'm currently looking for internship and full-time opportunities in software engineering, compiler development, and research roles. Feel free to reach out if you'd like to discuss potential opportunities or just want to connect!
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:devaanshmann5@gmail.com" class="contact-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">devaanshmann5@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/devaanshmann" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">linkedin.com/in/devaanshmann</span>
+                    </a>
+                    <a href="https://github.com/DevaanshMann" target="_blank" rel="noopener noreferrer" class="contact-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value">github.com/DevaanshMann</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Devaansh Mann. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
