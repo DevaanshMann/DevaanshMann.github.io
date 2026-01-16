@@ -242,27 +242,6 @@ document.querySelectorAll('.skill-tag').forEach(tag => {
     });
 });
 
-// ===== Project Cards Tilt Effect =====
-document.querySelectorAll('.project-card').forEach(card => {
-    card.addEventListener('mousemove', function(e) {
-        const rect = this.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
-
-        const rotateX = (y - centerY) / 20;
-        const rotateY = (centerX - x) / 20;
-
-        this.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
-    });
-
-    card.addEventListener('mouseleave', function() {
-        this.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
-    });
-});
-
 // ===== Console Easter Egg =====
 console.log('%c Welcome to my portfolio! ', 'background: #2563eb; color: white; font-size: 16px; padding: 10px; border-radius: 5px;');
 console.log('%c Feel free to explore the code. Built with vanilla HTML, CSS, and JavaScript. ', 'color: #6b7280; font-size: 12px;');
