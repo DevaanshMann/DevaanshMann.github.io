@@ -706,6 +706,13 @@ strong {
     color: white;
 }
 
+.research-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
 .research-card {
     background: var(--bg-secondary);
     border-radius: 16px;
