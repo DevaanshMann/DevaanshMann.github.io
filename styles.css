@@ -475,6 +475,28 @@ strong {
     60% { transform: translateY(3px); }
 }
 
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.hero-cta-secondary {
+    background: transparent;
+    border: 2px solid var(--accent-primary);
+    color: var(--accent-primary);
+}
+
+.hero-cta-secondary:hover {
+    background: var(--accent-primary);
+    color: white;
+}
+
+.hero-cta-secondary svg {
+    animation: none;
+}
+
 .hero-image {
     display: flex;
     justify-content: center;
