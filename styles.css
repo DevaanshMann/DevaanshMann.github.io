@@ -456,11 +456,13 @@ strong {
     color: white;
     font-weight: 500;
     border-radius: 8px;
+    border: 2px solid var(--accent-primary);
     transition: all var(--transition-fast);
 }
 
 .hero-cta:hover {
     background: var(--accent-secondary);
+    border-color: var(--accent-secondary);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
@@ -490,6 +492,7 @@ strong {
 
 .hero-cta-secondary:hover {
     background: var(--accent-primary);
+    border-color: var(--accent-primary);
     color: white;
 }
 
